@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:chocolate;
+
+}
+a{color: #fff;
+    text-decoration: none;
+
+}
+.navlist{
+    width: 100%;
+    background-color: rgba(18, 18, 39, 0.9);
+    z-index: 10;
+    
+}
+.navlist ul{
+    display: flex;
+    list-style: none;
+
+}
+.navlist ul li:first-child{
+    flex: 1;
+
+}
+.navlist ul h4{
+    font-family: serif;
+    color: #fff;
+}
+.navlist ul a{
+    margin-left: 20px;
+    font-size: 12px;
+
+
+}
+.navlist ul a:hover{
+    color: #f80;
+}
+.container{
+    color: white;
+    height: 30vh;
+    padding: 0px;
+}
+.container .title{
+    font-size: 3.5rem;
+    color: black;
+    background: gray;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 50px;
+    
+
+}
+.container .course-container{
+    display: flex;
+    gap: 10rem;
+    margin-top: 100px;
+    height: 50vh;
+    padding: 20px;
+    text-align: center;
+}
+.container .course-container .course{
+    text-align: center;
+    background: green;
+    margin-left: 20px;
+    margin-right: 5px;
+    padding: 30px;
+    border-radius: 12px;
+}
+ul li{
+    list-style: none;
+    padding: 10px;
+    text-transform: capitalize;
+    
+}
+.container .course-container .course h3{
+    padding: 10px 0;
+    font-size: large;
+    color: white;
+
+}
+.course h3{
+    text-transform: capitalize;
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISION COLLEGE</title>
+</head>
+<body>
+    <style>
+        
+        
+    *{
+        margin: 0;
+        padding: 0;
+        user-select: none;
+        
+    }
+    body{
+        font-family: 'kavivanar',cursive;
+        background: #c4e0e5;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .navlist{
+        width: 90%;
+        padding: 5px 10vh;
+        background-color: rgba(18, 18, 39, 0.9);
+        z-index: 10;
+            
+    }
+    .navlist ul{
+        display: flex;
+        list-style: none;
+    }
+    .navlist ul li:first-child{
+        flex: 1;
+    }
+    .navlist ul h4{
+        font-family: serif;
+        color: #fff;
+
+    }
+    .navlist ul a{
+        margin-right: 20px;
+        font-size: 12px;
+    }
+    .navlist ul a:hover{
+        color: #f80;
+    }
+    .wrapper{
+        width: 100%;
+        max-width: 680px;
+        margin: 100px auto 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .contect{
+        text-align: center;
+    }
+    .contect h1{
+        letter-spacing: 1px;
+
+    }
+    .form{
+        width: 100%;
+        margin: 25px 0;
+    }
+    .top-form,
+    .middle-form,
+    .bottom-form{
+        width: 100%;
+        min-height: 65px;
+        margin: 10px 0;
+        overflow: hidden;
+
+    }
+    .form input[type='text'],
+    .form textarea{
+        padding: 15px 5px;
+        box-sizing: border-box;
+        width: 100%;
+        border: 2px solid #fff;
+        border-radius: 2px;
+        outline: none;
+        transform: all 0.2 ease;
+    }
+    .form input:focus,
+    .form textarea:focus{
+        border-color:  #4ca1af;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0125),
+        0 0 8px rgba(76, 161, 175, 0.5);
+    }
+    .form .label{
+        margin-bottom: 5px;
+        text-transform: capitalize;
+        
+    }
+    .form{
+        background-color: slateblue;
+    }
+
+    .top-form .inner-form{
+        width: 29.9%;
+        float: left;
+        margin-right: 5%;
+    }
+    .top-form .inner-form:last-child{
+        margin-right: 0;
+    }
+    .middle-form{
+        clear: both;
+
+    }
+    .button-form textarea{
+        height: 120px;
+
+    }
+    .btn{
+        background:#4ca1af;
+        width: 200px;
+        padding: 10px 0;
+        border-radius: 2px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 5px;
+
+    }
+    .btn:hover{
+        color: #f80;
+
+    }
+    @media screen and (max-width: 460px){
+        .wrapper{
+            margin: 25px auto 0;
+        }
+        .top-form .inner-form{
+            width: 100%;
+            margin: 5px 0;
+        }
+    }
+
+
+    
+
+
+</style>
+<nav class="navlist">
+    <ul>
+        <li><h4>group O</h4></li>
+        <li><a href="home.html"> HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="faculty.html">FACULTY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="registeration.html">REGISTERATION</a></li>
+    </ul>
+
+</nav>
+
+    <div class="wrapper">
+        <div class="contect">
+        <h1>CONTACT FORM</h1>
+        <p>connect with us by sending your views.</p>
+
+    </div>
+    <div class="form">
+        <div class="top-form">
+            <div class="inner-form">
+                <div class="label">name</div>
+                <input type="text" placeholder="pls enter ur name">
+            </div>
+            <div class="inner-form">
+                <div class="label">email</div>
+                <input type="text" placeholder="pls enter ur email">
+            </div>
+            <div class="inner-form">
+                <div class="label">phone</div>
+                <input type="text" placeholder="pls enter ur phone">
+            </div>
+
+        </div>
+        <div class="middle-form">
+            <div class="inner-form">
+                <div class="label">subject</div>
+                <input type="text" placeholder="subject">
+            </div>
+        </div>
+
+        <div class="bottom-form">
+            <div class="inner-form">
+                <div class="label">massage</div>
+                <textarea placeholder="your massage"></textarea>
+            </div>
+        </div>
+        <div class="btn">send form</div>
+
+    </div>
+   
+
+
+
+
+
+</body>
+</html>

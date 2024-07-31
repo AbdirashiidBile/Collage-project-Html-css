@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISION COLLEGE</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'popines',sans-serif;
+        margin: auto;
+        font-size: 16px;
+        
+        
+
+    }
+    
+    a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .navlist{
+            width: 100%;
+            padding: 5px 10vh;
+            background: rgba(18, 18, 39, 0.9);
+            z-index: 10;
+
+            
+            
+        }
+        .navlist ul{
+            display: flex;
+            list-style: none;
+            
+        }
+        .navlist ul li:first-child{
+            flex: 1;
+        }
+        .navlist ul h4{
+            font-family: serif;
+            color: #fff;
+
+        }
+        .navlist ul a{
+            margin-left: 20px;
+            font-size: 12px;
+        }
+        .navlist ul a:hover{
+            color: blue;
+        }
+    body{
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        background: linear-gradient(135deg,#71b7e6,#9b59b6);
+        
+    }
+    .container{
+        max-width: 700px;
+        width: 100%;
+        background: #fff;
+        padding: 25px 30px;
+        border-radius: 5px;
+        margin-top: 50px;
+        background-color: j;
+        
+    }
+    .container .title{
+        font-size: 25px;
+        font-weight: 500;
+        position: relative;
+        
+
+    }
+    .container .title::before{
+        content: '';
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        height: 3px;
+        width: 30px;
+        background: linear-gradient(135deg,#71b7e6,#9b59b6);
+    }
+    .container form .user-details{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0 12px 0;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: calc(100% / 2 - 20px);
+    }
+    .user-details .input-box .details{
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .user-details .input-box input{
+        height: 45px;
+        width: 100%;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding-left: 15px;
+        font-size: 16px;
+        border-bottom-width: 2px;
+        transition: all 0.3s ease;
+    }
+    .user-details .input-box input:focus,
+    .user-details .input-box input:focus{
+        border-color: #9b59b6;
+    }
+    form .gender-details .gendet-title{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    form .gender-details .category{
+        display: flex;
+        width: 100%;
+        margin: 14px 0;
+        justify-content: space-between;
+        
+
+    }
+    .gender-details .category label{
+        display: flex;
+        align-items: center;
+
+    }
+    .gender-details .category .dot{
+        height: 18px;
+        width: 18px;
+        background: #d9d9d9;
+        border-radius: 50%;
+        margin-right: 10px;
+        border: 5px solid transparent;
+        transition: all 0.3s ease;
+    }
+    #dot-1:checked ~ .category label .one,
+    #dot-2:checked ~ .category label .two{   
+        border-color: #9b9b9b;
+        background: #9b59b6;
+    }
+    form input[type='radio']{
+        display: none;
+    }
+    form .button{
+        height: 45px;
+        margin: 45px;
+    }
+    form .button input{
+        height: 100%;
+        width: 100%;
+        outline: none;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        font-family: 500;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        background: linear-gradient(135deg,#71b7e6,#9b59b6);
+    }
+    form .button input:hover{
+        background: linear-gradient(-135deg,#71b7e6,#9b59b6);
+
+    }
+    @media (max-width: 584px) {
+        .container{
+            max-width: 100px;
+        }
+        form .user-details .input-box{
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        form .gender-details .category{
+            width: 100%;
+        }
+        .container form .user-details{
+            max-height: 400px;
+            overflow: scroll;
+        }
+        .container form .user-details{
+            max-height: 400px;
+            overflow: scroll;
+        }
+        .user-details::-webkit-scrollbar{
+            width: 0;
+        }
+    }
+
+
+</style>
+<nav class="navlist"> 
+    <ul>
+        <li><h4>group O</h4></li>
+        <li><a href="home.html"> HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="faculty.html">FACULTY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="registeration.html">REGISTERATION</a></li>
+    </ul>
+
+
+
+</nav>
+<body>
+
+    <div class="container">
+        <div class="title">REGISTERATION FORM</div>
+        <form action="">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">first name</span>
+                    <input type="text" placeholder="enter ur first name" required>
+
+                </div>
+                <div class="input-box">
+                    <span class="details">last name</span>
+                    <input type="text" placeholder="enter ur last name" required>
+
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="enter ur email" required>
+
+                </div>
+                <div class="input-box">
+                    <span class="details">Date</span>
+                    <input type="date" name="mydate" id="" required>
+
+                </div>
+                <div class="input-box">
+                    <span class="details">password</span>
+                    <input type="password" placeholder="enter ur password" required>
+
+                </div>
+                <div class="input-box">
+                    <span class="details">confirn</span>
+                    <input type="password" placeholder="confirn ur password">
+
+                </div>
+
+            </div>
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <span class="gender-title">GENDER</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">male</span><br><br>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">female</span>
+                    </label>
+                </div>
+
+            </div>
+            <div class="button">
+                <input type="submit" name="Register">
+
+            </div>
+        </form>
+        
+    </div>
+
+    
+</body>
+</html>
